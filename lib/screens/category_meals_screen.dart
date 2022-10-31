@@ -21,11 +21,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
   bool loadedInitialData = false;
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   void didChangeDependencies() {
     if (!loadedInitialData) {
       final routeArgs =
@@ -63,7 +58,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
           duration: displayedMeals[index].duration,
           complexity: displayedMeals[index].complexity,
           affordability: displayedMeals[index].affordability,
-          removeItem: removeMeal,
         ),
         itemCount: displayedMeals.length,
       ),
